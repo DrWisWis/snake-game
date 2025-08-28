@@ -22,6 +22,37 @@
                 <div class="badge">Velocidade: <span id="speed">1x</span></div>
             </div>
         </div>
+
+        <canvas id="game" width="480" height="480" aria-label="Área do jogo Snake" role="img"></canvas>
+
+
+        <div class="panel footer">
+            <div>💡 Dica: manter a cobra comprida sem bater nas paredes ou em si mesma!
+                Use <strong>+/−</strong> para ajustar a velocidade.</div>
+            <div class="keys">
+                <div class="key">↑ / W</div>
+                <div class="key">↓ / S</div>
+                <div class="key">← / A</div>
+                <div class="key">→ / D</div>
+                <div class="key">Espaço: Pausa</div>
+                <div class="key">R: Reiniciar</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Controles touch (apenas exibidos em telas pequenas) -->
+    <div class="touch" id="touchControls" style="display:none;">
+        <div class="row-empty"></div>
+        <div class="btn primary" data-dir="UP">▲</div>
+        <div class="row-empty"></div>
+        <div class="btn primary" data-dir="LEFT">◀</div>
+        <div class="btn warn" id="pauseBtn">⏯</div>
+        <div class="btn primary" data-dir="RIGHT">▶</div>
+        <div class="row-empty"></div>
+        <div class="btn primary" data-dir="DOWN">▼</div>
+        <div class="row-empty"></div>
+    </div>
 </body>
 
 </html>
